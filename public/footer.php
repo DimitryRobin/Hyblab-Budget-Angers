@@ -3,7 +3,7 @@ echo '
 <FOOTER class="main-section">
 	<!--Fin du scroll jule et la dette-->
 	<!--jule-->
-	<DIV class="container"><!--Slide entiÃ¨re-->
+	<DIV class="container"><!--Slide entière-->
 		<DIV class="row"><!--image du personnage-->
 			<FIGURE class="text-right wow fadeInUp delay-02s">
 				<IMG src="" alt="jules" />
@@ -19,6 +19,10 @@ echo '
 	
 	</DIV><!--Fin de la slide-->
 	<SCRIPT text="javascript">
+		var $p = $("p.bulle"),
+		$cover = $(".cover"),
+		width = $p.width(),
+		decrement = width / $p.text().length;
 		addChar();
 	</SCRIPT>
 </FOOTER>';
