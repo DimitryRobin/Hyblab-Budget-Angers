@@ -1,5 +1,5 @@
 <?php
-echo '<div class="section" id="section2">
+echo '<div class="section" id="section10">
 <section class="main-section alabaster"><!--main-section alabaster-start-->
     <div class="container">
         <div class="row">
@@ -7,7 +7,7 @@ echo '<div class="section" id="section2">
                 <img  src="img/iphone.png" alt="">
             </figure>
             <div class="col-lg-7 col-sm-8 featured-work">
-                <h2>Recettes</h2>
+                <h2>Recette investissement</h2>
                 <P class="padding-b">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</P>
                 <div class="featured-box">
                     <div class="featured-box-col1 wow fadeInRight delay-02s">
@@ -41,6 +41,6 @@ echo '<div class="section" id="section2">
         </div>
     </div>
 </section><!--main-section alabaster-end-->
-</div>
+</div>>
 ';
 ?>

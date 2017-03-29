@@ -868,3 +868,21 @@ border: 2px solid #fff;
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
 }
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
