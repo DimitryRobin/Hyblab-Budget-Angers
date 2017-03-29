@@ -1,0 +1,14 @@
+p .bulle{
+    font-family: monospace;
+    float: left;
+    padding: 0;
+    position: relative;
+}
+.cover {
+    height: 100%;
+    width: 100%;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
