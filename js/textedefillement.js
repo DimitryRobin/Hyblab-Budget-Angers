@@ -1,8 +1,9 @@
+/* A mettre dans le HTML baslise script
 var $p = $('p'),
     $cover = $('.cover'),
     width = $p.width(),
     decrement = width / $p.text().length;
-
+*/
 function addChar()
 {    
     $cover.css('width', '-=' + decrement);
