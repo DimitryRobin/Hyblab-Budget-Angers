@@ -7,7 +7,7 @@ echo '
       <div class="row">
         <div class="col-md-6"> 
           <p class="lead">Mais quand la Ville dépense de l’argent elle en gagne aussi, par exemple quand papa et maman gare la voiture rue Rabelais, ils doivent payer le stationnement, cela rapporte donc de l’argent à la collectivité.</p>
-          <p><img style="width: 40%; margin-left: -30px; margin-bottom: 20px" src="img/membres/Jules2.png" alt="" class="img-responsive img-circle"></p>
+          <p><img style="width: 40%; margin-left: 30px; margin-bottom: 20px" src="img/membres/Jules2.png" alt=""></p>
           </div>
         <div class="col-md-5 col-md-offset-1">
           <div id="container" style="min-width: 310px; height: 500px; max-width: 900px; margin: 0 auto"></div>
