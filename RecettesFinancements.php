@@ -6,12 +6,11 @@ echo '
     <div class="container clearfix">
       <div class="row">
         <div class="col-md-6"> 
-          <p class="lead">This can be an about section or anything else ;)</p>
-          <p>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. </p>
-          <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
-        </div>
+          <p class="lead">Mais quand la Ville dépense de l’argent elle en gagne aussi, par exemple quand papa et maman gare la voiture rue Rabelais, ils doivent payer le stationnement, cela rapporte donc de l’argent à la collectivité.</p>
+          <p><img style="width: 40%; margin-left: -30px; margin-bottom: 20px" src="img/membres/Jules2.png" alt="" class="img-responsive img-circle"></p>
+          </div>
         <div class="col-md-5 col-md-offset-1">
-          <p><img src="screen/img/about.jpg" alt="" class="img-responsive img-circle"></p>
+          <div id="container" style="min-width: 310px; height: 500px; max-width: 900px; margin: 0 auto"></div>
         </div>
       </div>
     </div>

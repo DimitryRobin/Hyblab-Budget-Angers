@@ -45,7 +45,15 @@
     <![endif]-->
 
     <link rel="stylesheet" href="screen/css/bubble.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 
+    <link rel="stylesheet" media="all" type="text/css" href="screen/css/style.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="screen/css/normalize.css" />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
     <style type="text/css">      
       /* ---------------------------------------------- /*
@@ -143,6 +151,7 @@
     <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
     <script src="iamx/assets/js/jquery.fitvids.js"></script>
     <script src="iamx/assets/js/scripts.js"></script>
+    <script src="screen/js/javascript.js"></script>
 
     <script type="text/javascript">
       // Pour gérer le clic sur le bouton "Commencer"
@@ -158,6 +167,12 @@
           el.moveTo($(this).data("index"));
       }); 
 
+        var mymap = L.map('mapid').setView([47.4827, -0.5448], 13);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+         maxZoom: 18,
+          id: 'dimitryrobin',
+          accessToken: 'pk.eyJ1IjoiZGltaXRyeXJvYmluIiwiYSI6ImNqMHZ5d2ZvMzAwMGEycHBiMXFyODE5emwifQ.MfIjFPvawy0oxrq0KrJIRQ'
+      }).addTo(mymap);
     
     </script>
   </body>
