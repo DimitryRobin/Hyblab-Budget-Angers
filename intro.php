@@ -30,14 +30,14 @@
 	</div>
 	<div class="row">
 		<div class="col-md-6 col-md-offset-1">
-			<img class="perso" src="img/Chloe2.png" alt="" class="img-responsive img-circle">
+			<img class="perso" src="img/Sophie2.png" alt="" class="img-responsive img-circle">
 			<div class="bulle">
 			<p id="mere1"></p>
 			</div>
 			
         </div>
 		<div class="col-md-2 col-md-offset-1">
-			<img class="perso" src="img/Sophie2.png" alt="" class="img-responsive img-circle">
+			<img class="perso" src="img/Chloe2.png" alt="" class="img-responsive img-circle">
 			<div class="bulle">
 			<p id="cloe1"></p>
 			</div>
