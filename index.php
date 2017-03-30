@@ -150,8 +150,13 @@
     <script src="iamx/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
     <script src="iamx/assets/js/jquery.fitvids.js"></script>
+	<script src="iamx/assets/js/in-view.min.js"></script>
     <script src="iamx/assets/js/scripts.js"></script>
+<<<<<<< HEAD
     <script src="screen/js/javascript.js"></script>
+=======
+	<script src="iamx/assets/js/defiltext.js"></script>
+>>>>>>> origin/master
 
     <script type="text/javascript">
       // Pour gérer le clic sur le bouton "Commencer"
@@ -174,6 +179,6 @@
           accessToken: 'pk.eyJ1IjoiZGltaXRyeXJvYmluIiwiYSI6ImNqMHZ5d2ZvMzAwMGEycHBiMXFyODE5emwifQ.MfIjFPvawy0oxrq0KrJIRQ'
       }).addTo(mymap);
     
-    </script>
+    </script>
   </body>
 </html>
