@@ -153,6 +153,20 @@
 					// No more characters. Break out.
 					clearInterval(outputSlowly);
 					activeJule2=true;					
+					if(activeJule2)
+					{
+						var outputSlowly = setInterval(function() {
+						
+							$('p#jule2').append(messageJule2.pop());
+							
+							if (messageJule2.length === 0) 
+							{
+								// No more characters. Break out.
+								clearInterval(outputSlowly);   
+							}
+							
+						}, timeout);
+					}
 				}
 				
 			}, timeout);
@@ -167,7 +181,6 @@
 	
 	inView('p#jule2').on("enter", function()
 	{
-		//$('p#intro').innerHTML(messageIntro).show();
 		if(activeJule2)
 		{
 			var outputSlowly = setInterval(function() {
@@ -182,6 +195,8 @@
 				
 			}, timeout);
 		}
+		//$('p#intro').innerHTML(messageIntro).show();
+		
 		else clearInterval(outputSlowly);
 	})
 	/*.on("exit", function()
@@ -348,12 +363,11 @@
 	
 	inView('p#juleinvest').on("enter", function()
 	{
-		//$('p#intro').innerHTML(messageIntro).show();
 		activeInvest=true;
 		if(activeInvest)
 		{
-			var outputSlowly = setInterval(function() {
-			
+			var outputSlowly = setInterval(function() 
+			{
 				$('p#juleinvest').append(messageJuleInvest.pop());
 				
 				if (messageJuleInvest.length === 0) 
@@ -361,65 +375,33 @@
 					// No more characters. Break out.
 					clearInterval(outputSlowly);   
 					activeJuleDette = true;
+					if(activeJuleDette)
+					{
+						var outputSlowly = setInterval(function() 
+						{
+							$('p#juledette').append(messageJuleDette.pop());					
+							if (messageJuleDette.length === 0) 
+							{
+								// No more characters. Break out.
+								clearInterval(outputSlowly);
+								activePereDette = true;
+								if(activePereDette)
+								{
+									var outputSlowly = setInterval(function() 
+									{
+										$('p#peredette').append(messagePereDette.pop());								
+										if (messagePereDette.length === 0) 
+										{
+											// No more characters. Break out.
+											clearInterval(outputSlowly);
+										}
+									}, timeout);
+								}
+							}
+						}, timeout);
+					}
 				}
-				
 			}, timeout);
 		}
 		else clearInterval(outputSlowly);
-	})
-	/*.on("exit", function()
-	{
-		//$('p#intro').hide();
-		activeIntro = false;
-	})*/;
-	
-	inView('p#juledette').on("enter", function()
-	{
-		//$('p#intro').innerHTML(messageIntro).show();
-		if(activeJuleDette)
-		{
-			var outputSlowly = setInterval(function() {
-			
-				$('p#juledette').append(messageJuleDette.pop());
-				
-				if (messageJuleDette.length === 0) 
-				{
-					// No more characters. Break out.
-					clearInterval(outputSlowly);
-					activePereDette = true;
-				}
-				
-			}, timeout);
-		}
-		else clearInterval(outputSlowly);
-	})
-	/*.on("exit", function()
-	{
-		//$('p#intro').hide();
-		activeIntro = false;
-	})*/;
-	
-	inView('p#peredette').on("enter", function()
-	{
-		//$('p#intro').innerHTML(messageIntro).show();
-		if(activePereDette)
-		{
-			var outputSlowly = setInterval(function() {
-			
-				$('p#peredette').append(messagePereDette.pop());
-				
-				if (messagePereDette.length === 0) 
-				{
-					// No more characters. Break out.
-					clearInterval(outputSlowly);
-				}
-				
-			}, timeout);
-		}
-		else clearInterval(outputSlowly);
-	})
-	/*.on("exit", function()
-	{
-		//$('p#intro').hide();
-		activeIntro = false;
-	})*/;
+	});
