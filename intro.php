@@ -6,11 +6,22 @@ echo '
     <div class="container clearfix">
       <div class="row">
         <div class="col-md-6"> 
-          <p class="lead">This can be an about section or anything else ;)</p>
           <p id="intro"></p>
         </div>
         <div class="col-md-5 col-md-offset-1">
-          <p><img src="screen/img/about.jpg" alt="" class="img-responsive img-circle"></p>
+			<img class="perso" src="img/Jules2.png" alt="" class="img-responsive img-circle">
+        </div>
+		<div class="col-md-5 col-md-offset-1">
+			<p id="pere1"></p>
+			<img class="perso" src="img/Laurent2.png" alt="" class="img-responsive img-circle">
+        </div>
+		<div class="col-md-5 col-md-offset-1">
+			<p id="mere1"></p>
+			<img class="perso" src="img/Chloe2.png" alt="" class="img-responsive img-circle">
+        </div>
+		<div class="col-md-5 col-md-offset-1">
+			<p id="cloe1"></p>
+			<img class="perso" src="img/Sophie2.png" alt="" class="img-responsive img-circle">
         </div>
       </div>
     </div>
