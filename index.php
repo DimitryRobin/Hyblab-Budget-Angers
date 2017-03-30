@@ -142,7 +142,9 @@
     <script src="iamx/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
     <script src="iamx/assets/js/jquery.fitvids.js"></script>
+	<script src="iamx/assets/js/in-view.min.js"></script>
     <script src="iamx/assets/js/scripts.js"></script>
+	<script src="iamx/assets/js/defiltext.js"></script>
 
     <script type="text/javascript">
       // Pour gérer le clic sur le bouton "Commencer"
@@ -159,6 +161,6 @@
       }); 
 
     
-    </script>
+    </script>
   </body>
 </html>
