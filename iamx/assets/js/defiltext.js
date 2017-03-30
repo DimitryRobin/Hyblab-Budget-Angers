@@ -15,6 +15,8 @@
 		activeSCO,
 		activeMaine,
 		activeInvest,
+		activeJuleDette,
+		ActivePereDette,
 		
 		
 		
@@ -32,7 +34,8 @@
 		$messageJuleTennis = 'Hâte, mais stressé pour mon tournoi de tennis demain'.split('').reverse(),
 		$messagePereMaine = 'Ce sera plus agréable de rejoindre le centre-ville à pied'.split('').reverse(),
 		$messageJuleInvest = 'Ces 5 projets ne sont pas les seuls investissements de la ville, il y en a de nombreux autres que nous pouvons classer par catégories.'.split('').reverse(),
-		
+		$messageJuleDette = 'Papa à force d\'emprunter la ville prend-elle des risques ?'.split('').reverse(),
+		$messagePereDette = 'Jules tu sais, emprunter c\'est construire pour l\'avenir aussi.'.split('').reverse(),
 	
 	inView('p#intro').on("enter", function()
 	{
@@ -360,6 +363,58 @@
 				{
 					// No more characters. Break out.
 					clearInterval(outputSlowly);   
+				}
+				
+			}, $timeout);
+		}
+		else clearInterval(outputSlowly);
+	})
+	/*.on("exit", function()
+	{
+		//$('p#intro').hide();
+		activeIntro = false;
+	})*/;
+	
+	inView('p#juledette').on("enter", function()
+	{
+		//$('p#intro').innerHTML($messageIntro).show();
+		activeJuleDette=true;
+		if(activeJuleDette)
+		{
+			var outputSlowly = setInterval(function() {
+			
+				$('p#juledette').append($messageJuleDette.pop());
+				
+				if ($messageJuleDette.length === 0) 
+				{
+					// No more characters. Break out.
+					clearInterval(outputSlowly);
+					activePereDette = true;
+				}
+				
+			}, $timeout);
+		}
+		else clearInterval(outputSlowly);
+	})
+	/*.on("exit", function()
+	{
+		//$('p#intro').hide();
+		activeIntro = false;
+	})*/;
+	
+	inView('p#peredette').on("enter", function()
+	{
+		//$('p#intro').innerHTML($messageIntro).show();
+		if(activePereDette)
+		{
+			var outputSlowly = setInterval(function() {
+			
+				$('p#peredette').append($messagePereDette.pop());
+				
+				if ($messagePereDette.length === 0) 
+				{
+					// No more characters. Break out.
+					clearInterval(outputSlowly);
 				}
 				
 			}, $timeout);
