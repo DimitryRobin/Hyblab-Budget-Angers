@@ -117,6 +117,8 @@
           include('DepensesInvestissements.php');
           // Dettes
           include('Dettes.php');
+	  // Credits    
+	  include('credit.php');    
           // Partenaires
           include('Partenaires.php');
         ?>
