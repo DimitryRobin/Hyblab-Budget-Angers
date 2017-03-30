@@ -20,7 +20,7 @@
 		
 		
 		
-	timeout = 50;
+	timeout = 15;
 	var messageIntro = 'Salut, moi, c\'est Jules, j\'ai 16 ans et je suis passionné de basket, que je pratique deux fois par semaine au parc des sports de la Baumette. Mes parents, ma soeur Chloé et moi allons souvent voir les matchs du SCO d\'Angers le weekend au stade Jean Bouin récemment renommé Raymond Kopa.'.split('').reverse(),
 		messagePere1 = 'Bonjour, nous sommes les parents de Jules et Chloé Nous habitons boulevard Henri Arnauld près du quai.'.split('').reverse(),
 		messageMere1 = 'Je m\'appelle Sophie, j\'ai 42 ans et je travaille au centre des congrès d\'Angers depuis maintenant 13 ans, en tant que chargée d\'évènementiel.'.split('').reverse(),
@@ -50,93 +50,57 @@
 				if (messageIntro.length === 0) 
 				{
 					// No more characters. Break out.
-					clearInterval(outputSlowly);   
+					clearInterval(outputSlowly);
+					activePere1 = true;
+					if(activePere1)
+					{
+						var outputSlowly = setInterval(function() {
+						
+							$('p#pere1').append(messagePere1.pop());
+							
+							if (messageIntro.length === 0) 
+							{
+								// No more characters. Break out.
+								clearInterval(outputSlowly);   
+								activeMere1 = true;
+								if(activeMere1)
+								{
+									var outputSlowly = setInterval(function() {
+									
+										$('p#mere1').append(messageMere1.pop());
+										
+										if (messageMere1.length === 0) 
+										{
+											// No more characters. Break out.
+											clearInterval(outputSlowly);
+											activeCloe1 = true;
+											if(activeCloe1)
+											{
+												var outputSlowly = setInterval(function() {
+												
+													$('p#cloe1').append(messageCloe1.pop());
+													
+													if (messageCloe1.length === 0) 
+													{
+														// No more characters. Break out.
+														clearInterval(outputSlowly);   
+													}
+													
+												}, timeout);
+											}
+										}
+										
+									}, timeout);
+								}
+							}
+							
+						}, timeout);
+					}
 				}
 				
 			}, timeout);
 		}
-		else clearInterval(outputSlowly);
 	})
-	/*.on("exit", function()
-	{
-		//$('p#intro').hide();
-		activeIntro = false;
-	})*/;
-	
-	inView('p#pere1').on("enter", function()
-	{
-		//$('p#intro').innerHTML(messageIntro).show();
-		if(activePere1)
-		{
-			var outputSlowly = setInterval(function() {
-			
-				$('p#pere1').append(messagePere1.pop());
-				
-				if (messageIntro.length === 0) 
-				{
-					// No more characters. Break out.
-					clearInterval(outputSlowly);   
-				}
-				
-			}, timeout);
-		}
-		else clearInterval(outputSlowly);
-	})
-	/*.on("exit", function()
-	{
-		//$('p#intro').hide();
-		activeIntro = false;
-	})*/;
-	
-	inView('p#mere1').on("enter", function()
-	{
-		//$('p#intro').innerHTML(messageIntro).show();
-		if(activeMere1)
-		{
-			var outputSlowly = setInterval(function() {
-			
-				$('p#mere1').append(messageMere1.pop());
-				
-				if (messageMere1.length === 0) 
-				{
-					// No more characters. Break out.
-					clearInterval(outputSlowly);   
-				}
-				
-			}, timeout);
-		}
-		else clearInterval(outputSlowly);
-	})
-	/*.on("exit", function()
-	{
-		//$('p#intro').hide();
-		activeIntro = false;
-	})*/;
-	
-	inView('p#cloe1').on("enter", function()
-	{
-		//$('p#intro').innerHTML(messageIntro).show();
-		if(activeCloe1)
-		{
-			var outputSlowly = setInterval(function() {
-			
-				$('p#cloe1').append(messageCloe1.pop());
-				
-				if (messageCloe1.length === 0) 
-				{
-					// No more characters. Break out.
-					clearInterval(outputSlowly);   
-				}
-				
-			}, timeout);
-		}
-		else clearInterval(outputSlowly);
-	})
-	/*.on("exit", function()
-	{
-		//$('p#intro').hide();
-		activeIntro = false;
-	})*/;
 	
 	inView('p#cloe2').on("enter", function()
 	{
