@@ -1,3 +1,9 @@
+<style>
+  .btn-default{
+    background-color: #ccc;
+  }
+</style>
+
 <?php
 echo '
 <section id="introduction">
@@ -11,6 +17,7 @@ echo '
           </div>
         <div class="col-md-5 col-md-offset-1">
           <div id="container" style="min-width: 310px; height: 500px; max-width: 900px; margin: 0 auto"></div>
+          <a href="https://angersloiremetropole.opendatasoft.com/explore/dataset/bp-2017-angers/" target="_blank">Accéder aux données en Open Data</a>
         </div>
       </div>
     </div>

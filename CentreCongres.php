@@ -1,20 +1,22 @@
-<?php
-echo '
 <section id="introduction">
-          <h2 class="heading">Centre des congrès</h2>
+  <h2 class="heading">Centre des congrès</h2>
   <div class="content">
     <div class="container clearfix">
       <div class="row">
-        <div class="col-md-6"> 
-          <p class="lead">This can be an about section or anything else ;)</p>
-          <p>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. </p>
-          <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
+
+        <div class="col-md-2">
+          <img src="img/Sophie1.png" class="img-responsive" alt="">
+          <div class="bulle">
+             « La rénovation permettra de mettre en valeur les événements à venir »
+             <br>
+             <br>
+          Le centre des congrès sera en rénovation à partir d’octobre 2017 pour une livraison en décembre 2018. Le coût total de cette opération est de près de 20 millions d’euros dont 1,8 million dépensé au cours de 2017. Ce nouveau centre des congrès permettra de renforcer le positionnement d’Angers sur le marché des rencontres d’Affaires et des manifestations, des salons, spectacles, concerts et autres festivals.
+          </div>
         </div>
-        <div class="col-md-5 col-md-offset-1">
-          <p><img src="screen/img/about.jpg" alt="" class="img-responsive img-circle"></p>
+        <div class="col-md-5 col-md-offset-5">
+          <p><img src="img/CentreCongres.jpg" alt="" class="img-responsive" style=""></p>
         </div>
       </div>
     </div>
   </div>
-</section>';
-?>
+</section>

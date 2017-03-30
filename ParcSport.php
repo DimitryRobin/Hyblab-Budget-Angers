@@ -5,14 +5,12 @@
       <div class="row">
 
         <div class="col-md-2">
-          <img src="img/Jules1.png" class="img-responsive" alt="">
+          <img src="img/Jules sport.png" class="img-responsive" alt="">
           <div class="bulle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            « Hâte, mais stressé pour mon tournoi de tennis demain »
+          </br>
+          </br>
+          La réhabilitation globale du parc des sports de la Baumette compte parmi les grands projets qui mettront la ville en mouvement. Celui-ci répondra à une attente citoyenne en lien avec la pratique du sport qu’elle soit en club ou en loisir. 5,16 millions d’euros seront investis sur l’année 2017 sur ce site de près de 15 000 m2. Avec une halle de tennis, un restaurant accessible à tous et 16 terrains de pétanque couverts qui s’ajoute aux complexes déjà présents sur le site.
           </div>
         </div>
         <div class="col-md-5 col-md-offset-5">

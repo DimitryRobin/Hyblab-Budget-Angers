@@ -1,20 +1,22 @@
-<?php
-echo '
 <section id="introduction">
-          <h2 class="heading">Coeur de Mairie</h2>
+  <h2 class="heading">Coeur de Maine</h2>
   <div class="content">
     <div class="container clearfix">
       <div class="row">
-        <div class="col-md-6"> 
-          <p class="lead">This can be an about section or anything else ;)</p>
-          <p>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. </p>
-          <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
+
+        <div class="col-md-2">
+          <img src="img/Laurent2.png" class="img-responsive" alt="">
+          <div class="bulle">
+             « Ce sera plus agréable de rejoindre le centre-ville à pied »
+          </br>
+          </br>
+          Valoriser les nombreux atouts liés à la présence de la rivière et redynamiser le secteur sont les principaux enjeux de l’aménagement “Centre-ville Maine”. Pour cela, la Ville a décidé de rompre avec l’aspect autoroutier de la voie des berges en la couvrant partiellement afin de permettre aux Angevins de se réapproprier la Maine. Le budget consacré à ce projet sur l'année 2017 est de 6,13 millions d'euros.
+          </div>
         </div>
-        <div class="col-md-5 col-md-offset-1">
-          <p><img src="screen/img/about.jpg" alt="" class="img-responsive img-circle"></p>
+        <div class="col-md-5 col-md-offset-5">
+          <p><img src="img/CoeurDeMaine.jpg" alt="" class="img-responsive" style="border-radius: 25px;"></p>
         </div>
       </div>
     </div>
   </div>
-</section>';
-?>
+</section>
