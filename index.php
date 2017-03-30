@@ -26,38 +26,71 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
-        <!-- Web Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-        <!-- Bootstrap core CSS -->
-        <link href="iamx/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <!-- Animate css -->
-        <link href="iamx/assets/css/animate.css" rel="stylesheet">
-        <!-- Custom styles CSS -->
-        <link href="iamx/assets/css/style.css" rel="stylesheet" media="screen">
-        <!-- Responsive CSS -->
-        <link href="iamx/assets/css/responsive.css" rel="stylesheet">
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap core CSS -->
+    <link href="iamx/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Animate css -->
+    <link href="iamx/assets/css/animate.css" rel="stylesheet">
+    <!-- Custom styles CSS -->
+    <link href="iamx/assets/css/style.css" rel="stylesheet" media="screen">
+    <!-- Responsive CSS -->
+    <link href="iamx/assets/css/responsive.css" rel="stylesheet">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="screen/css/bubble.css">
+
+
+    <style type="text/css">      
+      /* ---------------------------------------------- /*
+       * Scroll to top
+      /* ---------------------------------------------- */
+
+      .scroll-up {
+        position: fixed;
+        display: block;
+        z-index: 999;
+        bottom: 1.8em;
+        right: 1.8em;
+      }
+
+      .scroll-up a {
+        background-color: #68c3a3;
+        display: block;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+      }
+
+      .scroll-up a:hover,
+      .scroll-up a:active {
+        background-color: rgba(235, 235, 235, .8);
+        color: #222;
+      }
+    </style>
 
   </head>
   <body>
-    <div class="wrapper">
+     <div class="wrapper">
       <div class="main"> 
         <?php
           // Header
           include('iamx/header.php');
           // Intro
           include('intro.php');
-          /*
           // Recettes
-          include('recetteFinancement.php');
+          include('RecettesFinancements.php');
           // Dépenses
-          include('depenseFinancement.php');
+          include('DepensesFinancements.php');          
           // Map
           include('map.php');
           // Parc des sports
@@ -71,17 +104,22 @@
           // Centre des congrès
           include('CentreCongres.php');
           // Recettes sur les investissements
-          include('RecettesInvestissement.php');
+          include('RecettesInvestissements.php');
           // Dépenses sur les investissements
-          include('DepensesInvestissement.php');
+          include('DepensesInvestissements.php');
           // Dettes
           include('Dettes.php');
-          */
           // Partenaires
           include('Partenaires.php');
         ?>
       </div>
     </div>
+
+    <!-- Scroll-up -->
+    <div class="scroll-up">
+      <a data-index="5" class="btnRetourMap"><i class="fa fa-globe"></i></a>
+    </div>
+
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="screen/js/jquery-1.11.0.min.js"><\/script>')</script>
@@ -90,8 +128,8 @@
     <script src="screen/js/jquery.onepage-scroll.js"></script>
     <script src="screen/js/front.js"></script>
 
-
     <!-- Javascript files -->
+    <!-- <script src="iamx/assets/js/jquery.js"></script> -->
     <script src="iamx/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="iamx/assets/js/jquery.stellar.min.js"></script>
     <script src="iamx/assets/js/jquery.sticky.js"></script>
@@ -106,5 +144,21 @@
     <script src="iamx/assets/js/jquery.fitvids.js"></script>
     <script src="iamx/assets/js/scripts.js"></script>
 
+    <script type="text/javascript">
+      // Pour gérer le clic sur le bouton "Commencer"
+      el = $(this);
+
+      $(".btn-default").click(function (e) {
+          e.preventDefault();
+          el.moveTo($(this).data("index"));
+      }); 
+
+      $(".btnRetourMap").click(function (e) {
+          e.preventDefault();
+          el.moveTo($(this).data("index"));
+      }); 
+
+    
+    </script>
   </body>
 </html>

@@ -1,46 +1,20 @@
 <?php
-echo '<div class="section" id="section12">
-<section class="main-section alabaster"><!--main-section alabaster-start-->
-    <div class="container">
-        <div class="row">
-            <figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-                <img  src="img/iphone.png" alt="">
-            </figure>
-            <div class="col-lg-7 col-sm-8 featured-work">
-                <h2>Dettes</h2>
-                <P class="padding-b">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</P>
-                <div class="featured-box">
-                    <div class="featured-box-col1 wow fadeInRight delay-02s">
-                        <i class="fa-magic"></i>
-                    </div>  
-                    <div class="featured-box-col2 wow fadeInRight delay-02s">
-                        <h3>magic of theme development</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                    </div>    
-                </div>
-                <div class="featured-box">
-                    <div class="featured-box-col1 wow fadeInRight delay-04s">
-                        <i class="fa-gift"></i>
-                    </div>  
-                    <div class="featured-box-col2 wow fadeInRight delay-04s">
-                        <h3>neatly packaged</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                    </div>    
-                </div>
-                <div class="featured-box">
-                    <div class="featured-box-col1 wow fadeInRight delay-06s">
-                        <i class="fa-dashboard"></i>
-                    </div>  
-                    <div class="featured-box-col2 wow fadeInRight delay-06s">
-                        <h3>SEO optimized</h3>
-                        <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
-                    </div>    
-                </div>
-                <a class="Learn-More" href="#">Learn More</a>
-            </div>
+echo '
+<section id="introduction">
+          <h2 class="heading">Dettes</h2>
+  <div class="content">
+    <div class="container clearfix">
+      <div class="row">
+        <div class="col-md-6"> 
+          <p class="lead">This can be an about section or anything else ;)</p>
+          <p>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. </p>
+          <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>
         </div>
+        <div class="col-md-5 col-md-offset-1">
+          <p><img src="screen/img/about.jpg" alt="" class="img-responsive img-circle"></p>
+        </div>
+      </div>
     </div>
-</section><!--main-section alabaster-end-->
-</div>>
-';
+  </div>
+</section>';
 ?>

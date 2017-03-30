@@ -1,11 +1,11 @@
 <?php
 echo '
-<section id="page2">
+<section id="introduction">
+          <h2 class="heading">Introduction</h2>
   <div class="content">
     <div class="container clearfix">
       <div class="row">
         <div class="col-md-6"> 
-          <h2 class="heading">Intro</h2>
           <p class="lead">This can be an about section or anything else ;)</p>
           <p>Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation. </p>
           <p>Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery. </p>

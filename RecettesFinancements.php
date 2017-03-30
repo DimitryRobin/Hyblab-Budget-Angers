@@ -1,7 +1,7 @@
 <?php
 echo '
 <section id="introduction">
-          <h2 class="heading">Parc des sports</h2>
+          <h2 class="heading">Recettes financements</h2>
   <div class="content">
     <div class="container clearfix">
       <div class="row">

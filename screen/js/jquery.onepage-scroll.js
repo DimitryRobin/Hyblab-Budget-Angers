@@ -382,9 +382,8 @@
                 e.preventDefault();
                 var page_index = $(this).data("index");
                 el.moveTo(page_index);
-            });
+            });             
         }
-
 
         $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
             event.preventDefault();

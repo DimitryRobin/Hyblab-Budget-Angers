@@ -234,7 +234,7 @@ h6 {
 .btn-default.focus, 
 .btn-default:active, 
 .btn-default.active{
-    color: #b50303; // avant > #68c3a3
+    color: #68c3a3; // avant > 68c3a3 red > b50303
     background-color: #fff;
     border-color: #fff;
 }
@@ -361,10 +361,10 @@ ul.list-check li::before {
 	font-size: 60px;
 	line-height: 80px;
 	margin-bottom: 16px;
-	color: #0006fb; // avant > #52b3d9
+	color: #52b3d9; // avant > 52b3d9 bleu foncé > 0006fb
 }
 .intro h1 span{
-	color: #b50303; // avant > #68c3a3
+	color: #68c3a3; // avant > 68c3a3 rouge > b50303
 }
 .intro p{
 	color: #f7f7f7;
